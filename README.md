@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/Target-Any%20Codebase-3776AB?style=for-the-badge&logo=github&logoColor=white)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-**A structured, multi-agent approach to AI-assisted application security reviews — moving beyond generic scans to depth-first vulnerability analysis.**
+**A structured, multi-agent approach to AI-assisted application security reviews - moving beyond generic scans to depth-first vulnerability analysis.**
 
 </div>
 
@@ -15,19 +15,21 @@
 
 ## 📌 Project Overview
 
-This project demonstrates how to use **Claude Code as an agentic security review system** — not as a simple chatbot, but as a coordinated team of specialized security analysts.
+This project demonstrates how to use **Claude Code as an agentic security review system** - not as a simple chatbot, but as a coordinated team of specialized security analysts.
 
-Instead of asking AI to "do a security review" (which produces vague, generic output), this approach breaks the problem into **8 specialized sub-agents**, each responsible for a specific phase of the assessment. The result is a structured, high-confidence security report with real file paths, line numbers, and exploitation scenarios.
+Instead of asking AI to "do a security review" (which produces vague, generic output), this approach breaks the problem into **8 specialized sub-agents**, each responsible for a specific phase of the assessment. The result is a structured, high-confidence security report with real file paths, line numbers and exploitation scenarios.
 
-> **The problem I solved:** Most AI-assisted security reviews fail because they treat complex analysis as a single prompt. This project applies the same methodology used by professional AppSec teams — decomposing the review into architecture analysis, attack surface mapping, data flow tracing, and adversarial simulation.
+> **The problem I solved:** Most AI-assisted security reviews fail because they treat complex analysis as a single prompt. This project applies the same methodology used by professional AppSec teams - decomposing the review into architecture analysis, attack surface mapping, data flow tracing and adversarial simulation.
 
 <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/PLACEHOLDER" alt="Security Review Pipeline" width="100%"/>
+  <img src="https://github.com/user-attachments/assets/529f7c5b-2afe-44e2-868f-724458c7bc2f" alt="Security Review Pipeline" width="100%"/>
 </p>
 
 <p align="center"><em>8 specialized agents working in sequence: Architecture → Attack Surface → Data Flow → Vulnerabilities → Risk → Remediation → Validation → Exploitation</em></p>
+
+<br>
 
 ---
 
@@ -35,9 +37,9 @@ Instead of asking AI to "do a security review" (which produces vague, generic ou
 
 As a security professional, I noticed a pattern:
 
-- **Generic AI prompts** produce generic security advice — no file references, no line numbers, no proof of exploitability
-- **Real security reviews** follow a structured methodology — threat modeling, attack surface analysis, code path tracing
-- **The gap** is in how we prompt AI systems — treating them as chatbots instead of orchestrated analysis tools
+- **Generic AI prompts** produce generic security advice - no file references, no line numbers, no proof of exploitability
+- **Real security reviews** follow a structured methodology - threat modeling, attack surface analysis, code path tracing
+- **The gap** is in how we prompt AI systems - treating them as chatbots instead of orchestrated analysis tools
 
 This project bridges that gap by applying **agentic AI principles** to application security:
 
@@ -48,23 +50,13 @@ This project bridges that gap by applying **agentic AI principles** to applicati
 | No validation of findings | Built-in false positive elimination |
 | Theoretical risks | Step-by-step exploitation scenarios |
 
----
-
-## 🛠️ Tech Stack
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Claude_Code-Anthropic-7B2D8B?style=flat-square&logo=anthropic&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Agentic_AI-Multi--Agent-4A90D9?style=flat-square"/>
-  <img src="https://img.shields.io/badge/OWASP-Top_10-000000?style=flat-square&logo=owasp&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CVSS-v3.1_Scoring-DC3545?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Target-Any_Codebase-28A745?style=flat-square"/>
-</p>
+<br>
 
 ---
 
 ## 🏗️ The 8-Agent Pipeline
 
-Each agent has a specialized role, and each agent's output feeds the next:
+Each agent has a specialized role and each agent's output feeds the next:
 
 ```mermaid
 flowchart LR
@@ -109,6 +101,8 @@ flowchart LR
 | **VALIDATOR** | False positive elimination | High-confidence findings only |
 | **ATTACKER** | Adversarial simulation | Step-by-step exploitation with payloads |
 
+<br>
+
 ---
 
 ## ⚡ Quick Start
@@ -133,6 +127,8 @@ Copy the contents of [`prompts/security-review.md`](prompts/security-review.md) 
 ### 4. Review the generated report
 
 The system will produce a structured security assessment covering all 8 phases.
+
+<br>
 
 ---
 
@@ -197,6 +193,8 @@ Sensitive Assets:
 
 </details>
 
+<br>
+
 ---
 
 ## 🆚 Generic Prompt vs. Agentic Approach
@@ -209,6 +207,8 @@ Sensitive Assets:
 | **Validation** | ❌ Many false positives | ✅ Validated findings only |
 | **Exploitation Proof** | ❌ Theoretical | ✅ Working payloads |
 | **Remediation** | ❌ Generic advice | ✅ Code-level fixes |
+
+<br>
 
 ---
 
@@ -228,16 +228,20 @@ Agentic-Security-Code-Review/
     └── customization.md            # How to adapt for different codebases
 ```
 
+<br>
+
 ---
 
 ## 💡 What I Built & Learned
 
-- **Agentic AI Architecture** — Designing multi-agent systems with specialized roles
-- **Application Security Methodology** — Structured approach to code review (threat modeling, attack surface analysis, data flow tracing)
-- **Prompt Engineering** — Breaking complex tasks into agent-specific instructions
-- **OWASP Top 10** — Practical identification of injection, broken access control, security misconfiguration
-- **CVSS Scoring** — Risk assessment using industry-standard severity ratings
-- **Adversarial Thinking** — Simulating attacker behavior for exploitation validation
+- **Agentic AI Architecture** - Designing multi-agent systems with specialized roles
+- **Application Security Methodology** - Structured approach to code review (threat modeling, attack surface analysis, data flow tracing)
+- **Prompt Engineering** - Breaking complex tasks into agent-specific instructions
+- **OWASP Top 10** - Practical identification of injection, broken access control, security misconfiguration
+- **CVSS Scoring** - Risk assessment using industry-standard severity ratings
+- **Adversarial Thinking** - Simulating attacker behavior for exploitation validation
+
+<br>
 
 ---
 
